@@ -1,0 +1,156 @@
+@media (max-width: 32rem) {
+
+    * {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-menu {
+        position: relative;
+        margin-top: -10px;
+        Left: -150%;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(218, 227, 229);
+        width: 57%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 0 0;
+    }
+
+    .nav-menu.active {
+        Left: 0;
+    }
+
+    .perfil {
+        width: 130px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .plaza {
+        width: 86%;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    figcaption {
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    h1 {
+        justify-self: baseline;
+        padding: 10px;
+        padding-left: 50px;
+        font-size: 50px;
+    }
+
+    header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        background-color: rgba(169, 214, 229, 0.068);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    /*Hamburger logo*/
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: black;
+
+    }
+
+    .nav-link:hover {
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 2px;
+        border-radius: 5px;
+        background-color: rgba(119, 141, 169, 1);
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .grid section {
+        border-radius: 15px 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    section h2 {
+        background-color: rgb(218, 227, 229);
+        padding: 5px;
+        text-align: center;
+    }
+
+    .filters {
+        text-align: center;
+        border-bottom: 1px solid rgb(218, 227, 229);
+        padding: 10px;
+    }
+
+    #courses {
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .total_c {
+        text-align: center;
+        border-top: 1px solid rgb(218, 227, 229);
+
+    }
+
+    .grid {
+        display: block;
+        width: 500px;
+    }
+
+    button {
+        background-color: rgb(218, 227, 229);
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        width: 60px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    button:hover {
+        background-color: rgba(119, 141, 169, 0.616);
+    }
+
+    footer {
+        background-color: rgba(119, 141, 169, 1);
+        height: auto;
+        width: auto;
+        font-size: 17px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+}

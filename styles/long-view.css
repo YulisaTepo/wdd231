@@ -1,0 +1,210 @@
+/*Paleta AZULES*/
+/* $prussian-blue: rgba(1, 42, 74, 1);
+$indigo-dye: rgba(1, 58, 99, 1);
+$indigo-dye-2: rgba(1, 73, 124, 1);
+$indigo-dye-3: rgba(1, 79, 134, 1);
+$ucla-blue: rgba(42, 111, 151, 1);
+$cerulean: rgba(44, 125, 160, 1);
+$air-force-blue: rgba(70, 143, 175, 1);
+$air-superiority-blue: rgba(97, 165, 194, 1);
+$sky-blue: rgba(137, 194, 217, 1);
+$light-blue: rgba(169, 214, 229, 1);*/
+
+/* Blue WITH BEIGH
+
+$rich-black: rgba(13, 27, 42, 1);
+$oxford-blue: rgba(27, 38, 59, 1);
+$yinmn-blue: rgba(65, 90, 119, 1);
+$silver-lake-blue: rgba(119, 141, 169, 1);
+$platinum: rgba(224, 225, 221, 1);
+ */
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.perfil {
+    width: 130px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.plaza {
+    width: 86%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+figcaption {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    justify-self: baseline;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 50px;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgba(169, 214, 229, 0.068);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu {
+    background-color: rgba(119, 141, 169, 1);
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 60px;
+    text-align: center;
+}
+
+/**/
+.nav-link {
+    display: flex;
+    transition: 0.7s ease;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+
+}
+
+.nav-link:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: bold;
+    background-color: rgb(218, 227, 229);
+    padding: 1px;
+    border-radius: 5px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+
+}
+
+section {
+    border-radius: 15px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section h2 {
+    background-color: rgb(218, 227, 229);
+    padding: 5px;
+    text-align: center;
+}
+
+.filters {
+    text-align: center;
+    border-bottom: 1px solid rgb(218, 227, 229);
+    padding: 10px;
+}
+
+#courses {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.total_c {
+    text-align: center;
+    border-top: 1px solid rgb(218, 227, 229);
+
+}
+
+.grid {
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.grid .sec_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.grid .sec_2 {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid .sec_3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+button {
+    margin: 10px;
+    background-color: rgb(218, 227, 229);
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+button:hover {
+    background-color: rgba(119, 141, 169, 0.616);
+}
+
+footer {
+    background-color: rgba(119, 141, 169, 1);
+    height: auto;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
