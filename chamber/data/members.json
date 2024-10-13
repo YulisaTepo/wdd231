@@ -6,7 +6,7 @@
             "phone_num": 957421205,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1529088558886-c429274eba6c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "membership_level": "1",
+            "membership_level": "Gold",
             "other": null
         },
         {
@@ -15,7 +15,7 @@
             "phone_num": 983647545,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "membership_level": "1",
+            "membership_level": "Gold",
             "other": null
         },
         {
@@ -24,7 +24,7 @@
             "phone_num": 907168214,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1519822472072-ec86d5ab6f5c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "membership_level": "3",
+            "membership_level": "Platinum",
             "other": null
         },
         {
@@ -33,7 +33,7 @@
             "phone_num": 930124484,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1523368749929-6b2bf370dbf8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "membership_level": "3",
+            "membership_level": "Platinum",
             "other": null
         },
         {
@@ -42,7 +42,7 @@
             "phone_num": 933748512,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1546616193-9bfe1d557708?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "membership_level": "2",
+            "membership_level": "Gold",
             "other": null
         },
         {
@@ -51,7 +51,7 @@
             "phone_num": 996201812,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1702355605400-2576c5942e9e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "membership_level": "3",
+            "membership_level": "Silver",
             "other": null
         },
         {
@@ -60,7 +60,7 @@
             "phone_num": 901330220,
             "website_url": "https://www.instagram.com",
             "image": "https://images.unsplash.com/photo-1705508146954-bed527843211?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk4fHxzdG9yZXMlMjBpbiUyMGxhdGFtfGVufDB8fDB8fHww",
-            "membership_level": "2",
+            "membership_level": "Silver",
             "other": null
         }
     ]
