@@ -37,20 +37,20 @@
             "other": null
         },
         {
-            "name": "Sasha",
+            "name": "La Musa",
             "address": "Antonia Lopez de Bello",
             "phone_num": 933748512,
             "website_url": "https://www.instagram.com",
-            "image": "https://cdn.pixabay.com/photo/2017/07/12/21/26/shoe-repair-2498429_1280.jpg",
+            "image": "https://images.unsplash.com/photo-1546616193-9bfe1d557708?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "membership_level": "2",
             "other": null
         },
         {
-            "name": "Victoria",
+            "name": "La Gloria",
             "address": "Manzano/Palestina",
             "phone_num": 996201812,
             "website_url": "https://www.instagram.com",
-            "image": "https://cdn.pixabay.com/photo/2013/12/02/03/26/christmas-store-222227_640.jpg",
+            "image": "https://images.unsplash.com/photo-1702355605400-2576c5942e9e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "membership_level": "3",
             "other": null
         },
