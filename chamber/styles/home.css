@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    padding-top: 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    width: 100%;
+    padding-right: 15px;
+    margin: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin: 0;
+}
+
+.nav-item {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+}
+
+.nav-item:hover {
+    background-color: gold;
+    font-weight: bold;
+}
+
+.current-nav-item:hover {
+    background-color: rgba(255, 217, 0, 0.753);
+    font-weight: bold;
+}
+
+.current-nav-item {
+    width: 90px;
+    height: 90px;
+    margin: 0px;
+    padding: 0px;
+    background-color: silver;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.heroSection {
+    position: relative;
+    height: auto;
+}
+
+.heroSection img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+.actionCall {
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    background-color: gold;
+    border-radius: 5px;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+}
+
+.actionCall:hover {
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+h3 {
+    background-color: gold;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+main {
+    margin: 0;
+}
+
+
+.weatherSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    /*     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+ */
+}
+
+.box {
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box p {
+    padding: 10px;
+}
+
+.box .displayWeather,
+.displayBusiness {
+    padding-top: 10px;
+}
+
+.box #temperature {
+    font-size: 1.5rem;
+}
+
+.box #description {
+    text-transform: capitalize;
+}
+
+div.box {
+    width: 100%;
+}
+
+.displayBusiness {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.displayBusiness {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayBusiness div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.displayBusiness img {
+    border-radius: 5px;
+}
+
+section div p {
+    border: none;
+}
+
+section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.1pt;
+    color: black;
+    text-decoration: none;
+}
+
+section a:hover {
+    font-weight: bold;
+}
+
+#display-menu {
+    display: none;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: silver;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: absolute
+}
+
+.actionCall {
+    position:  relative;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    background-color: gold;
+    border-radius: 5px;
+    text-align: center;
+    top: 46vw;
+    left: 45vw;
+}
+.actionCall:hover {
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+} */
+
+
+@media (max-width: 46rem) {
+
+    #hamburgerButton {
+        display: block;
+        border: none;
+        cursor: pointer;
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: right;
+        padding: .25rem 2vw;
+        color: rgba(0, 0, 0, 0.815);
+        background-color: silver;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    header img {
+        margin: 0;
+        font-size: 1rem;
+
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.open {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-rows: 0fr;
+    }
+
+    .nav-bar.open {
+        grid-template-rows: 1fr;
+    }
+
+    .nav-item {
+        width: 100%;
+        height: 35px;
+        margin: 0;
+    }
+
+    .nav-item:hover {
+        background-color: gold;
+    }
+
+    .nav-link {
+        padding: 5px;
+
+    }
+
+    .current-nav-item {
+        width: 100%;
+        height: 35px;
+        background-color: rgba(192, 192, 192, 0.37);
+
+    }
+
+    .current-nav-item:hover {
+        background-color: gold;
+    }
+
+    .nav-menu.open a {
+        display: block;
+        margin: 0;
+    }
+
+
+
+
+    #hamburgerButton::before {
+        content: "\2630";
+    }
+
+    #hamburgerButton.open::before {
+        content: "✖";
+    }
+}
