@@ -44,7 +44,8 @@ header {
 .nav-link {
     text-decoration: none;
     color: black;
-    padding: 5px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin: 0;
 }
 
@@ -80,10 +81,15 @@ header {
     font-weight: bold;
 }
 
+.heroHolder {
+    width: 100vw;
+    min-width: 320px;
+}
 
 
 .hero {
-    width: 100%;
+    width: 100vw;
+    height: auto;
     margin: 0;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
@@ -235,6 +241,7 @@ h3 {
         font-size: 1rem;
 
     }
+
     .title {
         font-size: 5vw;
     }
@@ -263,6 +270,10 @@ h3 {
         height: 35px;
         margin: 0;
     }
+    .nav-link {
+        padding: 5px;
+
+    }
 
     .nav-item:hover {
         background-color: gold;
@@ -287,10 +298,12 @@ h3 {
     .grid img {
         width: 100%;
     }
+
     .list {
         text-align: center;
         justify-content: center;
     }
+
     .list section {
         width: 100%;
     }

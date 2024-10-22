@@ -34,30 +34,29 @@ async function getDirectory(url) {
     const data = await response.json();
     /*     catch(error)
      */
-    displayDirectory(data.bussiness);
+    displayDirectory(data.business);
 
 }
 getDirectory(url)
 
-const displayDirectory = (bussiness) => {
-    bussiness.forEach(bussines => {
+const displayDirectory = (business) => {
+    business.forEach(busines => {
         let box = document.createElement("section");
         let img = document.createElement("img");
         let name = document.createElement("h2");
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let link = document.createElement("a");
-        /*         let new_link = document.createElement("a");
-         */
-        img.setAttribute("src", bussines.image);
-        img.setAttribute("alt", "{bussines.name} image");
+        
+        img.setAttribute("src", busines.image);
+        img.setAttribute("alt", "{busines.name} image");
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "250px");
         img.setAttribute("height", "180px");
-        name.textContent = bussines.name;
-        address.textContent = bussines.address;
-        phone.textContent = bussines.phone_num;
-        link.href = bussines.website_url;
+        name.textContent = busines.name;
+        address.textContent = busines.address;
+        phone.textContent = busines.phone_num;
+        link.href = busines.website_url;
         link.textContent = "Visite Web Site";
         link.target = "_blank";
 

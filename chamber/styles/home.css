@@ -82,29 +82,46 @@ header {
 
 }
 
+.displayWeather img {
+    width: 100px;
+    height: 100px;
+}
+
+
 .actionCall {
+    width: 12vw;
+    font-size: 2.4vw;
     position: absolute;
     color: black;
+    font-weight: bold;
     text-decoration: none;
     padding: 5px;
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.808);
     border-radius: 5px;
     text-align: center;
-    top: 90%;
-    left: 50%;
+    top: 70%;
+    left: 78%;
 }
 
 .actionCall:hover {
     font-weight: bold;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: gold;
+    color: black;
+    padding: 5px;
+    font-size: 2.5vw;
 }
 
 h3 {
     background-color: gold;
     width: 100%;
     border-radius: 5px;
-
 }
+
+h2 {
+    margin: 15px;
+}
+
 
 main {
     margin: 0;
@@ -115,10 +132,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    /*     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
- */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .box {
@@ -131,7 +146,7 @@ main {
     padding: 10px;
 }
 
-.box .displayWeather,
+.box ,
 .displayBusiness {
     padding-top: 10px;
 }
@@ -157,8 +172,6 @@ div.box {
 }
 
 .displayBusiness {
-    margin-left: 10px;
-    margin-right: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -205,33 +218,9 @@ footer {
     text-align: center;
 }
 
-/* 
-
-.hero {
+#spotlightsSection img{
     width: 100%;
-    height: auto;
-    margin: 0;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    position: absolute
 }
-
-.actionCall {
-    position:  relative;
-    color: black;
-    text-decoration: none;
-    padding: 8px;
-    background-color: gold;
-    border-radius: 5px;
-    text-align: center;
-    top: 46vw;
-    left: 45vw;
-}
-.actionCall:hover {
-    font-weight: bold;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-
-} */
-
 
 @media (max-width: 46rem) {
 
@@ -313,9 +302,6 @@ footer {
         margin: 0;
     }
 
-
-
-
     #hamburgerButton::before {
         content: "\2630";
     }
@@ -323,4 +309,12 @@ footer {
     #hamburgerButton.open::before {
         content: "✖";
     }
+    .weatherSection {
+        display: block;
+
+    }
+    .box {
+        margin: 15px;
+    }
+   
 }

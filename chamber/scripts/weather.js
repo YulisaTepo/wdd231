@@ -24,8 +24,6 @@ async function fecthWeather() {
         const response = await fetch(myUrl);
         if (response.ok) {
             const data = await response.json();
-            /* console.log(data); */
-
             displayResults(data);
         }
         else {
@@ -44,13 +42,11 @@ function displayResults(data) {
     const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     graphic.setAttribute("src", iconSRC);
     graphic.setAttribute("alr", data.weather[0].description);
-    /* high.innerHTML = 0;
-    low.innerHTML = 0; */
+    graphic.setAttribute("width", "100")
+    graphic.setAttribute("hight", "100")
     humidity.innerHTML = `Humidity: ${data.main.humidity}&deg`;
 
 }
-
-
 
 async function fecthForecast() {
     try {
@@ -70,7 +66,6 @@ async function fecthForecast() {
 }
 fecthForecast();
 
-
 /* Función en flecha */
 const displayForecast = (dataForecast) => {
     const weatherForecast = document.querySelector("#holderForecast");
@@ -80,13 +75,94 @@ const displayForecast = (dataForecast) => {
         <p id="day-2">${week[(day + 2) % 7]}: <span id="temp-2"></span></p>
         <p id="day-3">${week[(day + 3) % 7]}: <span id="temp-3"></span></p> 
     `;
-    //weatherForecast.appendChild(dataForecast);
     const forecastTemperature = dataForecast.list.slice(0, 3);
 
     forecastTemperature.forEach((dailyData, index) => {
         document.getElementById(`temp-${index+1}`).textContent = `${parseFloat(dailyData.main.temp).toFixed(0)}°C`;
     });
 }
+
+// spotlights
+
+const businessUrl = "data/members.json"
+const businesHolder = document.querySelector(".displayBusiness");
+
+async function fecthBusiness() {
+    try {
+        const response = await fetch(businessUrl);
+        if (response.ok) {
+            const businessData = await response.json();
+            displayBusiness(businessData.business);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+fecthBusiness();
+
+function createBusiness(busines) {
+    const businesCard = document.createElement("div");
+    const title = document.createElement("h2");
+    const image = document.createElement("img");
+    const phone = document.createElement("p");
+    const address = document.createElement("p");
+    const website = document.createElement("a");
+    const membership = document.createElement("p");
+
+    image.setAttribute("src", busines.image);
+    image.setAttribute("alt", "{busines.name} image");
+    image.setAttribute("loading", "lazy");
+    image.setAttribute("width", "250px");
+    image.setAttribute("height", "180px");
+    title.textContent = busines.name;
+    address.textContent = busines.address;
+    phone.textContent = busines.phone_num;
+    website.href = busines.website_url;
+    website.textContent = "Visite Web Site";
+    website.target = "_blank";
+    membership.textContent = `Membership Level: ${busines.membership_level}`;
+
+
+    businesCard.appendChild(image);
+    businesCard.appendChild(title);
+    businesCard.appendChild(address);
+    businesCard.appendChild(phone);
+    businesCard.appendChild(website);
+    businesHolder.appendChild(businesCard);
+    console.log(busines);
+}
+
+function selectBusines(businessArray) {
+    const goodMembership = businessArray.filter(busines => busines.membership_level === "Gold" || busines.membership_level === "Silver")
+    const randomBusines = goodMembership.sort(() => 0.5 - Math.random());
+    return randomBusines.slice(0, 3);
+}
+
+function displayBusiness(businessData) {
+
+    const randomSelected = selectBusines(businessData);
+    randomSelected.forEach(busines => {
+        createBusiness(busines);
+    });
+}
+
+//Date.js
+/*This gets the year only*/
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+/* This display the last modification*/
+document.querySelector("#lastModified").textContent = document.lastModified;
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
 
 
