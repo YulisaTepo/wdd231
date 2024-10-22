@@ -78,7 +78,7 @@ const displayForecast = (dataForecast) => {
     const forecastTemperature = dataForecast.list.slice(0, 3);
 
     forecastTemperature.forEach((dailyData, index) => {
-        document.getElementById(`temp-${index+1}`).textContent = `${parseFloat(dailyData.main.temp).toFixed(0)}°C`;
+        document.getElementById(`temp-${index + 1}`).textContent = `${parseFloat(dailyData.main.temp).toFixed(0)}°C`;
     });
 }
 
@@ -132,6 +132,7 @@ function createBusiness(busines) {
     businesCard.appendChild(address);
     businesCard.appendChild(phone);
     businesCard.appendChild(website);
+    businesCard.appendChild(membership);
     businesHolder.appendChild(businesCard);
     console.log(busines);
 }
