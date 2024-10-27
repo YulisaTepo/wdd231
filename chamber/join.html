@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Patronato Chamber</title>
+    <meta name="description" content="Find variatity of businness laboring at Patronato at 2024">
+    <meta name="author" content="Yulisa Tepo Cubas">
+    <!--     <link rel="stylesheet" href="styles/home.css">
+ -->
+    <link rel="stylesheet" href="styles/join.css">
+    <!--     <script src="scripts/weather.js" defer></script>
+ -->
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js"></script>
+    <link rel="icon" href="images/logo_patronato.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Patronato Chamber Commerce | Home Page">
+    <meta property="og:content" content="Find variatity of businness laboring at Patronato">
+    <meta property="og:image" content="https://i.pinimg.com/originals/a9/f3/50/a9f35054f6190ba3ef57387d2cc38d65.jpg">
+    <meta property="og:url" content="https://yulisatepo.github.io/wdd231/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <img src="images/patronato_logo.webp" alt="Patronato Logo" width="100" height="100" loading="lazy">
+        <h1>Chamber of Commerce</h1>
+        <button id="hamburgerButton" title="Menu"></button>
+        <nav id="nav-bar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directory.html" class="nav-link">Directory</a>
+                </li>
+                <li class="current-nav-item">
+                    <a href="join.html" class="nav-link">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="discover.html" class="nav-link">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="userForm" action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Join Page</legend>
+
+                <label for="firstName">First Name: <input title="Enter first name" name="firstName" type="text"
+                        id="firstName" autocomplete="given-name" required /></label>
+
+
+                <label for="lastName">Last Name: <input title="Enter last name" name="lastName" id="lastName"
+                        type="text" autocomplete="family-name" required /></label>
+
+
+                <label for="organizationalTitle">Organizational Title: <input
+                        title="Only alphabetic characters, hyphens, and spaces are allowed, and it must be at least 7 characters long."
+                        name="organizationalTitle" id="organizationalTitle" type="text"
+                        autocomplete="organization-title" required pattern="[A-Za-z\- ]{7,}" /></label>
+
+
+                <label for="email">Email: <input title="Enter email" name="email" id="email" type="email"
+                        placeholder="example@gmail.com" autocomplete="email" required /></label>
+
+
+                <label for="phone">Phone Number: <input title="Phone" name="phone" id="phone" type="tel"
+                        placeholder="(555) 555-5555" autocomplete="tel" required /></label>
+
+
+                <label for="organizationName">Business/organization's name: <input title="Organization name"
+                        name="organizationName" id="organizationName" type="text" autocomplete="organization"
+                        required /></label>
+
+
+                <label for="membershipLevel">Membership level:
+                    <select title="Membership level" name="membershipLevel" id="membershipLevel">
+                        <option value="free">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                </label>
+                <label for="organizationDescription">Business/organization's description: <textarea
+                        title="Organization description" name="organizationDescription"
+                        id="organizationDescription"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Join Chamber</button>
+            </fieldset>
+
+        </form>
+        <div class="dialogSection">
+            <h2>Chamber Memberships</h2>
+            <div class="cardsMembership">
+                <h3>NP Membership</h3>
+                <button id="openButton1">Learn More</button>
+            </div>
+            <div class="cardsMembership">
+                <h3>Bronze Membership</h3>
+                <button id="openButton2">Learn More</button>
+            </div>
+            <div class="cardsMembership">
+                <h3>Silver Membership</h3>
+                <button id="openButton3">Learn More</button>
+            </div>
+            <div class="cardsMembership">
+                <h3>Gold Membership</h3>
+                <button id="openButton4">Learn More</button>
+            </div>
+
+            <dialog id="dialogBox">
+                <div id="textHere"></div>
+                <button id="closeButton">Close</button>
+            </dialog>
+        </div>
+    </main>
+
+    <footer>
+        <p>WDD231 Class Project</p>
+        <p>©<span id="currentyear"></span> Yulisa Tepo</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+
+</body>
+
+</html>
