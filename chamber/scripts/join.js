@@ -1,4 +1,3 @@
-
 const openButton1 = document.getElementById("openButton1");
 const openButton2 = document.getElementById("openButton2");
 const openButton3 = document.getElementById("openButton3");
@@ -64,33 +63,13 @@ closeButton.addEventListener("click", () => {
 });
 
 
-const hamburgerElement = document.querySelector("#hamburgerButton");
-const navElement = document.querySelector(".nav-menu");
-
-hamburgerElement.addEventListener("click", () => {
-    navElement.classList.toggle("open");
-    hamburgerElement.classList.toggle("open");
-})
-
-
-function setTiemstamp() {
+/* function setTiemstamp() {
     // Get the current date and time
     const currentDate = new Date();
     const formattedDate = currentDate.toISOString();  // Format as ISO string (e.g., "2023-10-22T14:30:00.000Z")
 
     // Set the value of the hidden input
     document.getElementById("timestamp").value = formattedDate;
-}
+} */
 
-/*This gets the year only*/
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
-/* This display the last modification*/
-document.querySelector("#lastModified").textContent = document.lastModified;
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
