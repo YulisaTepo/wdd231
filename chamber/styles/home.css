@@ -242,7 +242,6 @@ footer {
 
 #discoverImages img:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-;
 }
 
 #discoverImages {
@@ -274,7 +273,8 @@ footer {
     align-content: center;
     /*Centra al medio de arriba para abajo*/
 
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
 
 iframe {
     width: 100%;
