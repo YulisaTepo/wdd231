@@ -167,3 +167,33 @@ hamburgerElement.addEventListener("click", () => {
 })
 
 
+//Last visit
+const sidebar = document.getElementById('sideBar');
+
+    // Get the last visit date from localStorage
+    const lastVisit = localStorage.getItem('lastVisit');
+
+    // Check if this is the first visit
+    if (!lastVisit) {
+      // First visit, display welcome message
+      sidebar.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+      // Calculate the time difference in milliseconds
+      const currentTime = Date.now();
+      const timeDifference = currentTime - parseInt(lastVisit, 10);
+      
+      // Convert time difference to days
+      const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+      if (daysDifference < 1) {
+        sidebar.textContent = "Back so soon! Awesome!";
+      } else {
+        const dayText = daysDifference === 1 ? "day" : "days";
+        sidebar.textContent = `You last visited ${daysDifference} ${dayText} ago.`;
+      }
+    }
+
+    // Update the last visit date in localStorage
+    localStorage.setItem('lastVisit', Date.now());
+
+

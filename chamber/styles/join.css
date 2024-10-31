@@ -59,6 +59,7 @@ header {
 }
 
 .current-nav-item {
+    text-decoration: underline;
     width: 90px;
     height: 90px;
     margin: 0px;
