@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravan Contact Us | Web Site</title>
+    <meta name="description"
+        content="Welcome to our web page! We are Caravan and here you will find the variarity of our products. Contact us filling the form to get more information. Enjoy!">
+    <meta name="author" content="Yulisa Tepo Cubas">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/hamburgerAndDate.js" defer></script>
+    <link rel="icon" href="images/shopping.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Caravan Digital Store">
+    <meta property="og:content"
+        content="We are Caravan! Our web site provides you the most relevant products of our physical store. We recive orders and question in the Contact us section.">
+    <meta property="og:image"
+        content="https://i.ytimg.com/vi/cufFz6YoaEI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBWE2BexyujKLbtP79tHaqz068-ug">
+    <meta property="og:url" content="https://yulisatepo.github.io/wdd231/finalProject/index.html">
+
+</head>
+
+<body>
+    <header>
+        <h1>CARAVAN</h1>
+        <button id="hamburgerButton" title="Menu"></button>
+        <nav id="nav-bar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="current-nav-item">
+                    <a href="contactUs.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="textForm">Thank you for having interest in our products. <br>Fill the next form to give you more
+            information.</p>
+
+        <form id="caravanForm" action="thankyou.html" method="GET">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" required pattern=".+@gmail\.com"
+                placeholder="example@gmail.com">
+            <br><br>
+
+            <label for="product">Product Name:</label>
+            <input type="text" id="product" name="product" required placeholder="Enter product name">
+            <br><br>
+
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" cols="50" required></textarea>
+            <br><br>
+
+            <input type="checkbox" id="contact_permission" name="contact_permission">
+            <label for="contact_permission">Is it okay to message you back?</label>
+            <br><br>
+
+            <button class="formButton" type="submit">Submit</button>
+
+        </form>
+
+    </main>
+    <footer>
+        <p>WDD231 Class Project</p>
+        <p>©<span id="currentyear"></span> Yulisa Tepo</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

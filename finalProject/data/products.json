@@ -1,0 +1,132 @@
+{
+  "products": [
+    { 
+      "id": 1,
+      "name": "Scarves",
+      "type": "winter",
+      "unit_cost": 12.00,
+      "stock": true,
+      "image": "https://i.etsystatic.com/36626083/r/il/5832bc/4471228699/il_300x300.4471228699_l0gd.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Slippers",
+      "type": "winter",
+      "unit_cost": 5.00,
+      "stock": true,
+      "image": "https://rukminim2.flixcart.com/image/850/1000/kwcfngw0/slipper-flip-flop/b/q/r/5-iluf1270-w-purple-36-p-drunken-purple-original-imag9fqcahwur54e.jpeg?q=90&crop=false"
+    },
+    {
+      "id": 3,
+      "name": "Thermal Gloves",
+      "type": "winter",
+      "unit_cost": 3.50,
+      "stock": false,
+      "image": "https://www.karrimor.com/images/products/90012940_l.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Winter Hats",
+      "type": "winter",
+      "unit_cost": 4.00,
+      "stock": true,
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/cap/k/4/g/free-winter-cap-for-women-887755-winity-original-imaghsngbfppvz27.jpeg?q=90&crop=false"
+    },
+    {
+      "id": 5,
+      "name": "Neck Warmer",
+      "type": "winter",
+      "unit_cost": 2.00,
+      "stock": false,
+      "image": "https://harcheez.pk/wp-content/uploads/2024/01/6ab6f26f008d84c9c5743547efe2184e.jpg_750x750.jpg_-640x640.webp"
+    },
+    {
+      "id": 6,
+      "name": "Beach Bag",
+      "type": "summer",
+      "unit_cost": 15.00,
+      "stock": true,
+      "image": "https://m.media-amazon.com/images/I/712WAEjPQHL._AC_UY350_.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Havaianas Slide",
+      "type": "summer",
+      "unit_cost": 10.00,
+      "stock": true,
+      "image": "https://ae01.alicdn.com/kf/S2b75c2416afa44459f38e73e58dc675f0.jpg_960x960.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Sunglasses",
+      "type": "summer",
+      "unit_cost": 8.00,
+      "stock": false,
+      "image": "https://www.statusanxiety.com.au/cdn/shop/files/status-anxiety-sunglasses-unyielding-black-11-lifestyle-img_42603b35-c37d-45d5-b864-3fbc4bcb6d72.jpg?v=1727842237&width=770"
+    },
+    {
+      "id": 9,
+      "name": "Sun Hat Men",
+      "type": "summer",
+      "unit_cost": 10.00,
+      "stock": true,
+      "image": "https://i5.walmartimages.com/seo/Dyfzdhu-Mens-Uv-Protection-Wide-Sun-Hats-Cooling-Mesh-Ponytail-Hole-Cap-Foldable-Hat_f33a80a3-8646-4a77-9792-8e9022b4d197.f96c7a5f42276f36ae0d45f2abdcc432.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": 10,
+      "name": "Sun Hat Women",
+      "type": "summer",
+      "unit_cost": 9.00,
+      "stock": true,
+      "image": "https://i5.walmartimages.com/seo/UDIYO-Women-Wide-Brim-Straw-Panama-Roll-up-Hat-Fedora-Beach-Sun-Hat-UPF50_275e6892-dae4-4422-ba87-c42f87647a3b.06104a4e41c18a3545be7095a3fdf007.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": 11,
+      "name": "Raincoat",
+      "type": "winter",
+      "unit_cost": 16.00,
+      "stock": true,
+      "image": "https://www.steepandcheap.com/images/items/large/HYH/HYH00UJ/ESSYL_D11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Thermal Socks",
+      "type": "winter",
+      "unit_cost": 3.00,
+      "stock": true,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81ugWsxRWIL._AC_UL600_SR600,600_.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Beach Towel",
+      "type": "summer",
+      "unit_cost": 20.00,
+      "stock": false,
+      "image": "https://i5.walmartimages.com/asr/b5f4b51b-7c46-45c5-9e4b-7994d54f40ea.124e7725b4b2a867cc424c7897ddb9dd.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": 14,
+      "name": "Water Bottle",
+      "type": "summer",
+      "unit_cost": 3.99,
+      "stock": true,
+      "image": "https://i0.wp.com/www.metrohome.lk/wp-content/uploads/2023/10/Water-Bottle-Set-2.jpg?fit=550%2C550&ssl=1"
+    },
+    {
+      "id": 15,
+      "name": "Winter Leggins",
+      "type": "winter",
+      "unit_cost": 18.00,
+      "stock": false,
+      "image": "https://i.ebayimg.com/images/g/P8UAAOSwEwRjj1BT/s-l1200.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Hand Fan",
+      "type": "summer",
+      "unit_cost": 2.00,
+      "stock": true,
+      "image": "https://cdn11.bigcommerce.com/s-h9yhhjf2jt/images/stencil/1000x659/products/239/1360/9535-08-i_white-lace-hand-fan5956b149f166ed48f37e182cc498f365__84406.1499824823.jpg?c=2"
+    }
+  ]
+}
